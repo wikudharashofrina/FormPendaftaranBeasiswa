@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="16dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -20,7 +21,6 @@
         android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama : " />
@@ -28,15 +28,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText" />
+        android:id="@+id/editTextNama" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jenis Kelamin"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView" />
 
     <RadioGroup
+        android:id="@+id/RadioGroupStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -44,20 +45,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Laki-Laki"
-            android:id="@+id/radioButton" />
+            android:id="@+id/RBL" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perempuan"
-            android:id="@+id/radioButton2" />
+            android:id="@+id/RBP" />
     </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hobi"
-        android:id="@+id/textView3" />
+        android:id="@+id/textView2" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -81,12 +82,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="submit"
-        android:id="@+id/button" />
+        android:id="@+id/buttonOK" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hasil"
-        android:id="@+id/textView4" />
+        android:id="@+id/textViewHasil" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" />
 
 </LinearLayout>
